@@ -12,8 +12,8 @@ def f3(x3):
 y=0.0
 if x > 3:
     y=f1(x)
-elif 0 <= x <= 3:
+elif 0 <= x:
     y=f2(x)
-elif x < 0:
+else:
     y=f3(x)
 print(y)

@@ -1,7 +1,11 @@
 import math 
-x = float ( input( "Перший діапазон (а)"))
-b = float ( input( "Другий діапазон (а)"))
-h = float ( input( "Крок (h) "))
-while x<=b: 
-		y= math.log(math.fabs(2 * x + 7), 5) + (x - 4) ** 1/3
-		print("x=%.1f     y=%.3f"%(x,y))
+a=float(input("a="))
+b=float(input("b="))
+h=float(input("h="))
+x=a
+while a<=x<=b:
+    y=math.log(abs(2*x+7))+pow(x,1/3)-pow(x,1/3)
+    print(x,y)
+    x=x+h
+    
+
